@@ -1,0 +1,25 @@
+{
+  "name": "prod-new",
+  "version": "1.0.0",
+  "description": "this is just a little side project lets see what comes out of this",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Soulreaper077/prod-new.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Soulreaper077/prod-new/issues"
+  },
+  "homepage": "https://github.com/Soulreaper077/prod-new#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^6.7.4"
+  }
+}
