@@ -19,11 +19,20 @@
     </div>
     <!-- End of the header section-->
 
-    <!-- Section for search bar -->
-    <div class="search">
+    <!-- left side pane with the search bar and form -->
 
-    </div>
+    <div class="block">
+        <label class="label"> Location Search </label>
+        <form type="form" action="#" data-netlify="" class="form p-1" onSubmit="return false;">
+            <div class="field">
+                <div class="control"><input type="text" name="city" placeholder="Enter a City" class="input" id="citySearch" /></div>
+            </div>
+        </form>
 
+    <!-- Section for search bar and button  -->
+    <button id="searchBtn" class="btn-style">Search</button>
+    <button id="clearBtn" class="btn-style">Clear</button>
+</div> 
     <!-- end of search section -->
 
     <!-- location history section -->
@@ -33,6 +42,8 @@
     </div>
 
     <!-- end of the search history section -->
+
+    <!-- end of the left side box -->
 
     <!-- right side daily forecast div -->
 
