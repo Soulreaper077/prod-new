@@ -11,12 +11,11 @@
 </head>
 <body>
     <!-- Start to the header section-->
+    <nav>
     <div class="header">
-        <h1> Heavy Forecast </h1>
-        <nav>
-          
-        </nav>
+        <h1> Heavy Forecast </h1>  
     </div>
+    </nav>
     <!-- End of the header section-->
 
     <!-- left side pane with the search bar and form -->
@@ -33,17 +32,22 @@
     <button id="searchBtn" class="btn-style">Search</button>
     <button id="clearBtn" class="btn-style">Clear</button>
 </div> 
-    <!-- end of search section -->
-
     <!-- location history section -->
 
     <div class="box">
-
+        <article class="media">
+            <figure class="media-left"></figure>
+        </article><label class="label">
+            <i class="fa-solid fa-clock-rotate-left"></i>
+            Location History</label>
+        <div id="locationHistory" class="location-history is-centered">
+            <!-- insert location search history here dynamically -->
+            </div>
     </div>
 
-    <!-- end of the search history section -->
-
     <!-- end of the left side box -->
+
+    <!--####### BREAK #######-->
 
     <!-- right side daily forecast div -->
 
@@ -54,10 +58,12 @@
     <!-- daily forecast end -->
 
     <!-- Start of the footer section -->
+    <footer>
 
-
-
-    <!-- End of the footer -->
+    </footer>
+   
+    <!-- Scripts down below -->
+    <script src=""></script>
 
 </body>
 </html>
