@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    border: 2px solid black; 
+    justify-content: center ;
+    padding: 5px; 
+    margin: 3px; 
+}
+
+h1 {
+    color: teal; 
+}
+
+.footer {
+    display: flex; 
+    gap: 10px; 
+    justify-content: center;
+}
