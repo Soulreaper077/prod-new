@@ -15,3 +15,30 @@ h1 {
     gap: 10px; 
     justify-content: center;
 }
+
+.btn-style {
+    background-color: olivedrab;
+    color: whitesmoke; 
+}
+
+/* button sizing to make them stack as well as set the box size */
+#searchBtn, #clearBtn {
+    width: 25vw;
+    padding: 2px; 
+    margin: 7px; 
+    display: flex;
+    justify-content: center;
+}
+
+/* inline block display to force block to reduce and stay left */
+.block {
+    padding: 10px;
+    margin: 15px; 
+    border: 3px solid black; 
+    display: inline-block;
+}
+/* Left box class */
+.lbox {
+    padding: 10px;
+    margin: 5px;
+}
