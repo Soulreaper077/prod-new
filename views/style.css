@@ -42,3 +42,18 @@ h1 {
     padding: 10px;
     margin: 5px;
 }
+
+/* Location search border box ?? */ 
+.field {
+    width: 25vw;  
+    border: solid 2px transparent; 
+}
+
+#citySearch {
+    width: 25vw; 
+}
+
+.label {
+    font-size: 25px;
+    
+}
