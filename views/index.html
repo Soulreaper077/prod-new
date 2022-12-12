@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
 
     <!-- Links to the css and the Bootstrap-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sample.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <title>Weather Report</title>
 </head>
@@ -19,9 +19,8 @@
     </div>
     </nav>
     <!-- End of the header section-->
-
     <!-- left side pane with the search bar and form -->
-
+<div class="container">
     <div class="block">
         <label class="label"> Location Search </label>
         <form type="form" action="#" data-netlify="" class="form p-1" onSubmit="return false;">
@@ -33,7 +32,7 @@
     <!-- Section for search bar and button  -->
     <button id="searchBtn" class="btn-style">Search</button>
     <button id="clearBtn" class="btn-style">Clear</button>
-</div> 
+ 
     <!-- location history section -->
 
     <div class="lbox">
@@ -46,7 +45,7 @@
             <!-- insert location search history here dynamically -->
             </div>
     </div>
-
+</div> <!-- bloock div for location search and history in the same -->
     <!-- end of the left side box -->
 
     <!--####### BREAK #######-->
@@ -55,11 +54,20 @@
 
     <div class="columns">
         <div class="cards">
+            <article class="media">
+                <figure class="media-left"></figure>
+                <div class="content">
+                    <p class="has-text-weight-bold">
+                        <i class="fa-solid fa-cloud-sun"></i>
+                        Weather Report:
+                    </p>
+                </div>
+            </article>
 
         </div>
         
     </div>
-
+</div> <!-- container closing div for the flex wrap -->
     <!-- daily forecast end -->
 
     <!-- Start of the footer section -->

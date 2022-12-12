@@ -1,0 +1,50 @@
+/* Define font and background color for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  /* Style the header and center the text */
+  nav .header {
+    background-color: #000000;
+    text-align: center;
+    color: white;
+    padding: 10px;
+  }
+  
+  /* Style the search form */
+  .form {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the search input field */
+  .form .input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Style the search and clear buttons */
+  .btn-style {
+    padding: 10px 20px;
+    background-color: #0099ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Style the location history section */
+  .location-history {
+    padding: 20px;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  

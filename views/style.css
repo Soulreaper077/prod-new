@@ -6,6 +6,11 @@
     margin: 3px; 
 }
 
+.container {
+    display: flex; 
+    flex-wrap:wrap
+}
+
 h1 {
     color: teal; 
 }
@@ -17,7 +22,7 @@ h1 {
 }
 
 .btn-style {
-    background-color: olivedrab;
+    background-color: rgb(35, 117, 142);
     color: whitesmoke; 
 }
 
@@ -35,12 +40,16 @@ h1 {
     padding: 10px;
     margin: 15px; 
     border: 3px solid black; 
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    
 }
 /* Left box class */
 .lbox {
+    display: flex;
     padding: 10px;
     margin: 5px;
+
 }
 
 /* Location search border box ?? */ 
@@ -56,4 +65,11 @@ h1 {
 .label {
     font-size: 25px;
     
+}
+
+.columns {
+    display: inline-flex;
+    float: right;
+    border: 2px solid green;
+
 }
