@@ -54,7 +54,6 @@ h1 {
 
 /* Location search border box ?? */ 
 .field {
-    width: 25vw;  
     border: solid 2px transparent; 
 }
 
@@ -67,9 +66,21 @@ h1 {
     
 }
 
+/* weather report section box styling */
 .columns {
-    display: inline-flex;
-    float: right;
     border: 2px solid green;
+    margin: 5px;
+    
 
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 5px;
+}
+
+.weekday {
+    border: solid 2px blueviolet;
+    margin: 5px; 
 }
