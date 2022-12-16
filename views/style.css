@@ -84,3 +84,6 @@ h1 {
     border: solid 2px blueviolet;
     margin: 5px; 
 }
+.scene {
+    border: 3px outset olivedrab;
+}
