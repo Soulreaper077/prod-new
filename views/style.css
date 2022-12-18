@@ -1,18 +1,19 @@
+
+
 .header {
     display: flex;
-    border: 2px solid black; 
     justify-content: center ;
-    padding: 5px; 
-    margin: 3px; 
 }
 
-.container {
-    display: flex; 
-    flex-wrap:wrap
+.footer {
+    border-bottom: 30px outset cadetblue;
+    margin-top: 5px; 
+
 }
 
 h1 {
     color: teal; 
+    font-size: 40px;
 }
 
 .footer {
@@ -28,7 +29,7 @@ h1 {
 
 /* button sizing to make them stack as well as set the box size */
 #searchBtn, #clearBtn {
-    width: 25vw;
+    width: 25rem;
     padding: 2px; 
     margin: 7px; 
     display: flex;
@@ -37,18 +38,25 @@ h1 {
 
 /* inline block display to force block to reduce and stay left */
 .block {
-    padding: 10px;
+    padding: 20px;
     margin: 15px; 
     border: 3px solid black; 
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column; 
+    width: 40rem;  
 }
+
+.container {
+    display:flex; 
+    flex-flow: wrap;
+}
+
 /* Left box class */
 .lbox {
     display: flex;
-    padding: 10px;
+    padding: 20px;
     margin: 5px;
+    border-top: 2px solid cadetblue; 
 
 }
 
@@ -58,7 +66,7 @@ h1 {
 }
 
 #citySearch {
-    width: 25vw; 
+    width: 25rem; 
 }
 
 .label {
@@ -69,21 +77,49 @@ h1 {
 /* weather report section box styling */
 .columns {
     border: 2px solid green;
-    margin: 5px;
+    margin: 10px;
+    padding-bottom: 10px; 
+    width: 100rem; 
     
-
 }
 
+.media {
+    justify-content: center;
+}
+
+
 .cards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 5px;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    height: 20rem;
+    padding: 10px; 
+    margin: 10px; 
+    
 }
 
 .weekday {
     border: solid 2px blueviolet;
     margin: 5px; 
+    padding: 5px; 
+}
+
+.dayof {
+    border: solid 2px transparent;
+    margin: 5px; 
+    padding: 5px;
+    
 }
 .scene {
     border: 3px outset olivedrab;
+    margin: 15px;
+    padding: 10px; 
+    width: 50rem;
+}
+
+.component {
+    border: 2px outset black; 
+    margin: 10px;
+    padding-bottom: 5px; 
+    height: 15rem;
 }
