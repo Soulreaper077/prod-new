@@ -29,54 +29,59 @@ h1 {
 
 /* button sizing to make them stack as well as set the box size */
 #searchBtn, #clearBtn {
-    width: 25rem;
+    width: 42rem;
     padding: 2px; 
     margin: 7px; 
     display: flex;
     justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 /* inline block display to force block to reduce and stay left */
 .block {
     padding: 20px;
     margin: 15px; 
-    border: 3px solid black; 
-    display: flex;
-    flex-direction: column; 
-    width: 40rem;  
+    border: 2px outset black; 
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 11, 9, 0.398), 0 3px 6px rgba(7, 13, 13, 0.265);
+    float: center;
+    width: 43rem;  
 }
 
 .container {
     display:flex; 
     flex-flow: wrap;
+    justify-content: center;
 }
 
 /* Left box class */
 .lbox {
-    display: flex;
-    padding: 20px;
-    margin: 5px;
+    display:flex;
+    flex-direction: column;
+    float: center;
     border-top: 2px solid cadetblue; 
+    /*border-bottom: 2px solid cadetblue;*/
 
 }
 
 /* Location search border box ?? */ 
 .field {
     border: solid 2px transparent; 
+    float: center; 
 }
-
+/* field to adjust the search bar freely */ 
 #citySearch {
-    width: 25rem; 
+    width: 42rem; 
 }
 
 .label {
-    font-size: 25px;
-    
+    font-size: 25px; 
 }
 
 /* weather report section box styling */
 .columns {
-    border: 2px solid green;
+    border-bottom: 2px solid rgba(11, 120, 115, 0.967);
     margin: 10px;
     padding-bottom: 10px; 
     width: 100rem; 
@@ -99,9 +104,12 @@ h1 {
 }
 
 .weekday {
-    border: solid 2px blueviolet;
+    border: solid 2px rgb(9, 96, 90);
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     margin: 5px; 
     padding: 5px; 
+    background: linear-gradient( to left top, rgb(78, 88, 95), rgb(142, 153, 165));
 }
 
 .dayof {
@@ -111,7 +119,9 @@ h1 {
     
 }
 .scene {
-    border: 3px outset olivedrab;
+    border: 2px outset rgb(5, 7, 1);
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.345), 0 3px 6px rgba(0,0,0,0.23);
     margin: 15px;
     padding: 10px; 
     width: 50rem;
