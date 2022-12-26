@@ -1,15 +1,17 @@
 // scripts for the weather api front end below 
 // constants below 
-var count  = 0;
-var searchEl = document.getElementById('searchBtn');
-var clearEl = document.getElementById('clearBtn');
+const searchEl = document.getElementById('searchBtn');
+const clearEl = document.getElementById('clearBtn');
 
+// event listner for the search button 
 searchEl.addEventListener('click', function () {
     console.log('clicked');
-    count++
 });
 
+// Event listner for the clear button 
 clearEl.addEventListener('click', function(){
     console.log('clicked');
-    count++
 }); 
+
+// dom minipulation for the left side weather pane below 
+const currentDay = document.getElementsByClassName('currently'); 
