@@ -27,7 +27,7 @@
         <label class="label"> Location Search </label>
         <form type="form" action="#" data-netlify="" class="form p-1" onSubmit="return false;">
             <div class="field">
-                <div class="control"><input type="text" name="city" placeholder="Enter a City" class="input" id="citySearch" /></div>
+                <div class="control"><input type="text" name="city" placeholder="Enter a City" class="input" data-city-search id="citySearch" /></div>
             </div>
         </form>
 
@@ -57,14 +57,27 @@
 <!-- Left side pane -->
 <div class="today">
     <div class="scene">
-        <h3>Daily Weather Report</h3>
-        
+        <div class="icon-container">
+            <canvas id="icon" width="100" height="100"></canvas>
+        </div>
         <div class="dayof">
-            <h4 class="currently"> Today </h4>
-            <p> Content cards informartion </p>
-            <div class="component">
-                <p> Partly cloudy </p>
+            <div class="general">
+                <div class="status">Enter A Location Here dynamically</div>
+                <div class="location">Find the weather </div>
             </div>
+            <div class="detail-box"></div>
+                <div class="detail">
+                    <div class="title">Wind</div>
+                    <div class="values">TBD</div>
+                </div>
+                <div class="detail">
+                    <div class="title">Temperature</div>
+                    <div class="values">TBD</div>
+                </div>
+                <div class="detail">
+                    <div class="title">Precipitation</div>
+                    <div class="values">TBD</div>
+                </div>
         </div>
     </div>
 </div>
@@ -119,7 +132,13 @@
     
    
     <!-- Scripts down below -->
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQ_YU9Su3RX_jholZ_kK0Vde4BEOkFgkE&libraries=places&callback=initMap">
+</script>
     <script src="script.js"></script>
+    
+
+    <!-- End of script tags section -->
     <footer>
         <ul className='links'>
             <h4><a href='https://github.com/soulreaper077'>Github</a></h4>
