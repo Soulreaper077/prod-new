@@ -1,6 +1,6 @@
 // scripts for the weather api front end below 
 // constants below 
-const searchEl = document.querySelector('[data-city-search]');
+const searchEl = document.getElementById('citySearch'); 
 const searchBox = new google.maps.places.SearchBox(searchEl); 
 searchBox.addListener('places_changed', () => {
     const place = searchBox.getPlaces()[0]
