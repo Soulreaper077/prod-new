@@ -138,3 +138,9 @@ ul {
     justify-content: center;
     gap: 5vw; 
 }
+
+.detail-box {
+    border: 2px solid black;
+    display: flex;
+    flex-direction:row; 
+}

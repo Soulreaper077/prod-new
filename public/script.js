@@ -1,5 +1,7 @@
 // scripts for the weather api front end below 
 // constants below 
+
+// constants for the search box and logic for the google maps locations api 
 const searchEl = document.getElementById('citySearch'); 
 const searchBox = new google.maps.places.SearchBox(searchEl); 
 searchBox.addListener('places_changed', () => {
@@ -21,6 +23,7 @@ searchBox.addListener('places_changed', () => {
         setWeatherData(data, place.formatted_address)
     })
 })
+// end of the search box logic
 
 // clickable buttons 
 const searchBtn = document.getElementById('searchBtn');
