@@ -128,7 +128,7 @@ h1 {
 .component {
     border: 2px outset black; 
     margin: 10px;
-    padding-bottom: 5px; 
+    padding-bottom: 5px;
     height: 15rem;
 }
 
@@ -140,7 +140,34 @@ ul {
 }
 
 .detail-box {
-    border: 2px solid black;
+    border-top: 2px solid black;
     display: flex;
     flex-direction:row; 
+    justify-content: center;
+    
 }
+ .detail {
+    margin: 20px;
+    padding: 20px; 
+    
+    
+ }
+
+ .border-box {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    
+ }
+
+ .title, .values {
+    font-size: 20px; 
+ }
+
+ .status {
+    font-size: 25px; 
+ }
+
+ .location {
+    font-size: 35px; 
+    font-weight: bolder;
+ }
