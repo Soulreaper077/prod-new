@@ -161,10 +161,12 @@ ul {
 
  .title, .values {
     font-size: 20px; 
+    align-items: center;
  }
 
  .status {
-    font-size: 25px; 
+    font-size: 25px;
+    align-items: center;  
  }
 
  .location {
