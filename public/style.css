@@ -95,9 +95,10 @@ h1 {
     display: flex;
     flex-direction: row; 
     justify-content: center;
-    height: 20rem;
+    min-height: 20rem;
     padding: 10px; 
     margin: 10px; 
+    
     
 }
 
@@ -105,9 +106,14 @@ h1 {
     border: solid 2px rgb(9, 96, 90);
     border-radius: 5px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-    margin: 5px; 
-    padding: 5px; 
+    margin: 10px; 
+    padding: 20px; 
     background: linear-gradient( to left top, rgb(78, 88, 95), rgb(142, 153, 165));
+}
+
+.weatherCon {
+    padding: 15px;
+    margin: 15px; 
 }
 
 .dayof {
@@ -153,6 +159,12 @@ ul {
     
  }
 
+ /* start to the daily weather box css */
+
+ .general {
+    text-align: center;
+ }
+
  .border-box {
     border-left: 2px solid black;
     border-right: 2px solid black;
@@ -173,3 +185,20 @@ ul {
     font-size: 35px; 
     font-weight: bolder;
  }
+
+/* css for the bottom cards */
+.forecastDay {
+    text-align: center;
+    font-size: 25px; 
+    font-weight: bold; 
+}
+
+.weekForecast {
+    text-align: center; 
+}
+
+h4 {
+    border-bottom: 2px solid black; 
+}
+/* end of section for the cards */ 
+
