@@ -25,19 +25,20 @@ searchBox.addListener('places_changed', () => {
 })
 // end of the search box logic
 
-// clickable buttons 
+// TODO start of the logic for the location history section goes here !!! 
+
+// clickable buttons for location search box 
 const searchBtn = document.getElementById('searchBtn');
 const clearEl = document.getElementById('clearBtn');
-
 // event listner for the search button 
 searchEl.addEventListener('click', function () {
     console.log('clicked');
 });
-
 // Event listner for the clear button 
 clearEl.addEventListener('click', function(){
     console.log('clicked');
 }); 
+// end of the search bar logic 
 
 // dom minipulation for the left side weather pane below 
 const currentDay = document.getElementsByClassName('currently'); 
