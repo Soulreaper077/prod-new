@@ -1,5 +1,23 @@
 // scripts for the weather api front end below 
 // constants below 
+const dateEl = document.getElementById('date');
+const currentWeather = document.getElementById('weather-items');
+const countryEl = document.getElementById('country');
+
+const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 
+'Dec']; 
+
+// function for the current date and time 
+setInterval(() => {
+    const time = new Date(); 
+    const month = time.getMonth();
+    const date= time.getDate()
+    const day = time.getDay();
+    
+    // dom minipulaton below 
+}, 1000)
+
 
 // constants for the search box and logic for the google maps locations api 
 const searchEl = document.getElementById('citySearch'); 
