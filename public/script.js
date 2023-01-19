@@ -4,6 +4,9 @@ const dateEl = document.getElementById('date');
 const currentWeather = document.getElementById('weather-items');
 const countryEl = document.getElementById('country');
 
+// dom elements for todays weather conditions 
+const cardCons = document.getElementsByClassName('values'); // cards constraints
+
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 
 'Dec']; 
@@ -15,8 +18,8 @@ setInterval(() => {
     const date= time.getDate()
     const day = time.getDay();
     
-    // dom minipulaton below 
-}, 1000)
+    
+}, 1000)// dom minipulaton below 
 
 
 // constants for the search box and logic for the google maps locations api 
