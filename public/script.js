@@ -5,7 +5,12 @@ const currentWeather = document.getElementById('weather-items');
 const countryEl = document.getElementById('country');
 
 // dom elements for todays weather conditions 
+const statusCheck = document.getElementsByName('status');
+const locationCheck = document.getElementsByClassName('location'); 
 const cardCons = document.getElementsByClassName('values'); // cards constraints
+
+// end of card constraints for todays weather conditons 
+
 
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 
