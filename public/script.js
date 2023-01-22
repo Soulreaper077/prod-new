@@ -23,8 +23,12 @@ setInterval(() => {
     const date= time.getDate()
     const day = time.getDay();
     
-    
+    const dateString = `${day}, ${month} ${date}`;
+    document.getElementById("current-date").innerHTML = dateString;
 }, 1000)// dom minipulaton below 
+
+
+// end of logic to get the current time and date displayed 
 
 
 // constants for the search box and logic for the google maps locations api 
