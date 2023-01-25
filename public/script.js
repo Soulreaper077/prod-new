@@ -1,4 +1,5 @@
 // scripts for the weather api front end below 
+
 // constants below 
 const dateEl = document.getElementById('date');
 const currentWeather = document.getElementById('weather-items');
@@ -11,22 +12,21 @@ const cardCons = document.getElementsByClassName('values'); // cards constraints
 
 // end of card constraints for todays weather conditons 
 
-
+// current date logic below 
 const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 
 'Dec']; 
 
 // function for the current date and time 
-setInterval(() => {
+setTimeout(() => {
     const time = new Date(); 
     const month = time.getMonth();
     const date= time.getDate()
     const day = time.getDay();
     
-    const dateString = `${day}, ${month} ${date}`;
-    document.getElementById("current-date").innerHTML = dateString;
-}, 1000)// dom minipulaton below 
-
+    const dateString = `${days[day]}, ${months[month]}, ${date}`;
+    document.getElementsByClassName("current-date")[0].innerHTML = dateString;
+}, 100)// dom minipulaton below 
 
 // end of logic to get the current time and date displayed 
 
@@ -58,12 +58,25 @@ searchBox.addListener('places_changed', () => {
 // TODO start of the logic for the location history section goes here !!! 
 
 // clickable buttons for location search box 
-const searchBtn = document.getElementById('searchBtn');
-const clearEl = document.getElementById('clearBtn');
-// event listner for the search button 
-searchEl.addEventListener('click', function () {
+// logic for teh search bar gathering of inputs and displaying the city on the card 
+const searchBtnEl = document.getElementById('searchBtn');
+searchBtnEl.addEventListener('click', function () {
     console.log('clicked');
+    const userInput = searchEl.value;
+    localStorage.setItem('userInput', userInput);
+    displaySavedInput(); 
 });
+const displaySavedInput = function(){
+    const statusEl = document.getElementsByName('status')[0];
+    const storedInput = localStorage.getItem("userInput");
+    if (storedInput) {
+        statusEl.innerHTML = storedInput;
+    }
+}
+
+// end of logic to display the searched locaton onto the card 
+
+const clearEl = document.getElementById('clearBtn');
 // Event listner for the clear button 
 clearEl.addEventListener('click', function(){
     console.log('clicked');
@@ -72,3 +85,5 @@ clearEl.addEventListener('click', function(){
 
 // dom minipulation for the left side weather pane below 
 const currentDay = document.getElementsByClassName('currently'); 
+
+

@@ -179,12 +179,12 @@ ul {
  }
 
  .status {
-    font-size: 25px;
+    font-size: 35px;
     align-items: center;  
  }
 
- .location {
-    font-size: 35px; 
+ .current-date {
+    font-size: 25px; 
     font-weight: bolder;
  }
 
