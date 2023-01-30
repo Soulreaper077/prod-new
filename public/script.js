@@ -56,7 +56,6 @@ searchBox.addListener('places_changed', () => {
 // end of the search box logic
 
 // TODO start of the logic for the location history section goes here !!! 
-
 const searchBtnEl = document.getElementById('searchBtn');
 searchBtnEl.addEventListener('click', function () {
 const userInput = searchEl.value;
@@ -65,10 +64,23 @@ const statusEl = document.getElementsByClassName('status')[0];
 const storedInput = localStorage.getItem("userInput");
 statusEl.innerHTML = storedInput;
 });
-
-
-
 // end of logic to display the searched locaton onto the card 
+
+// start of weather map for cards on bottom 
+const cards = document.getElementsByClassName('cards'); 
+const cardContext = document.getElementsByClassName('weekday');
+const setDay = document.getElementsByClassName('forecastDay');
+const dataTemp = document.getElementsByClassName('data-temp');
+const dataRain = document.getElementsByClassName('data-rain');
+const dataWind = document.getElementsByClassName('data-wind');
+
+
+
+
+
+
+// end of logic for weather forecasting cards 
+
 
 const clearEl = document.getElementById('clearBtn');
 // Event listner for the clear button 

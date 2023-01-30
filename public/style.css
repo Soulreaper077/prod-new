@@ -1,4 +1,6 @@
-
+body {
+    background: linear-gradient(to right, rgb(82, 123, 155), rgb(15, 60, 88)); 
+}
 
 .header {
     display: flex;
@@ -45,6 +47,7 @@ h1 {
     box-shadow: 0 3px 6px rgba(0, 11, 9, 0.398), 0 3px 6px rgba(7, 13, 13, 0.265);
     float: center;
     width: 43rem;  
+    background: linear-gradient( to left top, rgb(74, 118, 125), rgb(99, 137, 171));
 }
 
 .container {
