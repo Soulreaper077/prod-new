@@ -7,11 +7,6 @@ body {
     justify-content: center ;
 }
 
-footer {
-    border-bottom: 30px outset cadetblue;
-   
-}
-
 h1 {
     color: teal; 
     font-size: 40px;
@@ -47,7 +42,7 @@ h1 {
     box-shadow: 0 3px 6px rgba(0, 11, 9, 0.398), 0 3px 6px rgba(7, 13, 13, 0.265);
     float: center;
     width: 43rem;  
-    background: linear-gradient( to left top, rgb(74, 118, 125), rgb(99, 137, 171));
+    background: linear-gradient( to left top, rgb(61, 70, 80), rgb(78, 115, 146));
 }
 
 .container {
@@ -74,6 +69,8 @@ h1 {
 /* field to adjust the search bar freely */ 
 #citySearch {
     width: 42rem; 
+    border-radius: 7px;
+    text-align: center;
 }
 
 .label {
@@ -111,7 +108,7 @@ h1 {
     box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
     margin: 10px; 
     padding: 20px; 
-    background: linear-gradient( to left top, rgb(78, 88, 95), rgb(142, 153, 165));
+    background: linear-gradient( to left top, rgb(61, 70, 80), rgb(78, 115, 146));
 }
 
 .weatherCon {
@@ -196,6 +193,8 @@ ul {
     text-align: center;
     font-size: 25px; 
     font-weight: bold; 
+    color: rgb(14, 34, 39);
+    
 }
 
 .weekForecast {

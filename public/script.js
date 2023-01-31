@@ -66,7 +66,16 @@ statusEl.innerHTML = storedInput;
 });
 // end of logic to display the searched locaton onto the card 
 
+// first card for the daily weather conditions 
+
+
+
+
+
+// emd of section right 
+
 // start of weather map for cards on bottom 
+// non scope constasnts 
 const cards = document.getElementsByClassName('cards'); 
 const cardContext = document.getElementsByClassName('weekday');
 const setDay = document.getElementsByClassName('forecastDay');
@@ -74,6 +83,7 @@ const dataTemp = document.getElementsByClassName('data-temp');
 const dataRain = document.getElementsByClassName('data-rain');
 const dataWind = document.getElementsByClassName('data-wind');
 
+//cards logic
 
 
 
