@@ -50,7 +50,7 @@ searchBox.addListener('places_changed', () => {
             longitude: longitude
         })
     }).then(res => res.json()).then(data => {
-        setWeatherData(data, place.formatted_address)
+        fetchWeatherData(data, place.formatted_address)
     })
 })
 // end of the search box logic
@@ -67,10 +67,25 @@ statusEl.innerHTML = storedInput;
 // end of logic to display the searched locaton onto the card 
 
 // first card for the daily weather conditions 
+const searchBtnTrig = document.getElementById('searchBtn');
+searchBtnTrig.addEventListener('click', function () {
+  const userInput = searchEl.value;
+  localStorage.setItem('userInput', userInput);
+  fetchWeatherData(userInput);
+});
 
-
-
-
+const fetchWeatherData = (location) => {
+  const API_KEY = "b041d9f33b1a37c3ccfbe793a5211fbd";
+  const API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${API_KEY}`;
+  
+  fetch(API_URL)
+    .then(response => response.json())
+    .then(data => {
+      console.log(data);
+      // Do something with the weather data here
+    })
+    .catch(error => console.error(error));
+};
 
 // emd of section right 
 
