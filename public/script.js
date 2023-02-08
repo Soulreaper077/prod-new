@@ -74,6 +74,12 @@ searchBtnTrig.addEventListener('click', function () {
   fetchWeatherData(userInput);
 });
 
+// constants for the diily weather forecasting 
+const windDay = document.getElementsByClassName('valuesWind');
+const tempDay = document.getElementsByClassName('valuesTemp');
+const PrecDay = document.getElementsByClassName('valuesPrec');
+
+
 const fetchWeatherData = (location) => {
   const API_KEY = "b041d9f33b1a37c3ccfbe793a5211fbd";
   const API_URL = `https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=${API_KEY}`;
